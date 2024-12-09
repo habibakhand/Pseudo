@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#header{
+    text-align: center;
+}
+
+#container{
+    background-color: aquamarine;
+    margin: 50px auto 0px auto;
+    width: 300px;
+    padding: 20px;
+}
+
+#item{
+    list-style: none;
+}
+
+/* */
+#container > button {
+    padding: 5px 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* pseudo-classes */
+#container > button:hover{
+    background-color: crimson;
+
+}
+/* li */
+#item > li {
+    padding: 10px;
+    background-color: rgb(240, 43, 223);
+    margin: 2px;
+}
+
+/*  */
+#item > li:nth-child(2) {
+    background-color: bisque;
+    
+}
+#item > li:nth-child(odd) {
+    background-color: powderblue;
+}
+
+input{
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+
+}
+input:focus{
+    background-color: rgb(207, 182, 182);
+    border: none;
+    outline: none;
+}
+
+a{
+    display: inline-block;
+    font-size: 30px;
+}
+a:visited{
+    color: rgb(212, 56, 82);
+}
+
+/* Psuedo elements:: */
+#hello::after{
+    content: "BD";
+    border-top: 2px solid rgb(240, 43, 223);
+    color: blueviolet;
+
+}
+
+#hello::before{
+    content: "";
+    border: 3px solid;
+    color: black;
+}
+
+p::first-letter{
+    font-size: 300%;
+    font-weight: bold;
+    color: rgb(240, 15, 240);
+}
